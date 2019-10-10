@@ -7,8 +7,12 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  antalPlader = Array(80).fill(0).map(x => this._generatePlateNumbers());
+  antalPlader;
   numbers = [];
+  constructor() {
+    let num = +prompt('How many plates?');
+    this.antalPlader = Array(num).fill(0).map(x => this._generatePlateNumbers());
+  }
 
   private _generatePlateNumbers() {
     const a = [];
