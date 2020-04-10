@@ -3,18 +3,18 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'app';
-  antalPlader;
+  antalPlader: number[][][];
   numbers = [];
   constructor() {
-    let num = +prompt('How many plates?');
-    this.antalPlader = Array(num).fill(0).map(x => this._generatePlateNumbers());
+    let num = 50;//+prompt('How many plates?');
+    this.antalPlader = Array(num).fill(0).map(() => this._generatePlateNumbers());
   }
 
-  private _generatePlateNumbers() {
+  private _generatePlateNumbers(): number[][] {
     const a = [];
     this.numbers = [];
     for (let i = 0; i < 3; i++) {
@@ -23,7 +23,7 @@ export class AppComponent {
     return a;
   }
 
-  private _generateRow() {
+  private _generateRow(): number[] {
     const row = [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined];
     for (let i = 0; i < 5; i++) {
       const randomNum = Math.floor(Math.random() * 90) + 1;

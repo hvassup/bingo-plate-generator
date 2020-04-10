@@ -3,13 +3,13 @@ import {Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'app-plade',
   templateUrl: './plade.component.html',
-  styleUrls: ['./plade.component.css']
+  styleUrls: ['./plade.component.scss']
 })
 export class PladeComponent implements OnInit {
-  @Input() numbers;
+  @Input() numbers: number[][];
+  @Input() plateId: number;
   constructor() { }
 
   ngOnInit() {
   }
-
 }

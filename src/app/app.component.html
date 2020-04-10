@@ -1,2 +1,2 @@
-<app-plade *ngFor="let x of antalPlader" [numbers]="x">
+<app-plade *ngFor="let x of antalPlader; let i = index" [plateId]="i" [numbers]="x">
 </app-plade>

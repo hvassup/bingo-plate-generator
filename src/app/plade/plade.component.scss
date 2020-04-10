@@ -1,0 +1,49 @@
+:host {
+  // background-image: url("../../assets/background.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+table {
+  background-color: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+}
+td {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+img {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ey {
+  height: 100px;
+}
+
+#top {
+  height: 50px;
+}
+
+#knowledge {
+  height: 50px;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  b {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 1px;
+    font-size: 8px;
+  }
+}
