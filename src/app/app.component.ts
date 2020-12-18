@@ -10,7 +10,7 @@ export class AppComponent {
   antalPlader: number[][][];
   numbers = [];
   constructor() {
-    let num = 50;//+prompt('How many plates?');
+    let num = 100;//+prompt('How many plates?');
     this.antalPlader = Array(num).fill(0).map(() => this._generatePlateNumbers());
   }
 
