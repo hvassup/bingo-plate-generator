@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npx ng build --prod",
+  "outputDirectory": "dist/BingoPlader"
+}
